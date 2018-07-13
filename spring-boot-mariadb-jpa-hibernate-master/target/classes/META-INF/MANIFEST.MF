@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: spring-boot-mariadb-jpa-hibernate
+Implementation-Version: 0.0.1
+Built-By: vivkumar
+Implementation-Vendor-Id: org.mariadb
+Build-Jdk: 1.8.0_131
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/spring-boot-mariadb-jpa-hibernate
+Created-By: Maven Integration for Eclipse
+Main-Class: com.nashtech.Application
+

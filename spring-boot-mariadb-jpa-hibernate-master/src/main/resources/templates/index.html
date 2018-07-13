@@ -1,0 +1,10 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<body>
+<h4>User list : </h4>
+<!--/*/ <th:block data-th-each="user : ${users}"> /*/-->
+    <div th:text="${user.email}">user email</div>
+    <div th:text="${user.name}">user name</div>
+<!--/*/ </th:block> /*/-->
+</body>
+</html>
