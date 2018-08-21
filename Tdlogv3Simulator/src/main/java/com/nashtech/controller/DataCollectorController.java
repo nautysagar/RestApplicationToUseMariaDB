@@ -20,20 +20,22 @@ public class DataCollectorController {
 	@ResponseBody
 	public ResponseEntity<String> create(int td, int tdc) {
 
+		if (td < 1 || tdc < 1) {
+			td = 1;
+			tdc = 10;
+		}
 		TdlogResult result = sim.create(td, tdc);
+
 		return getStatus(result);
 
 	}
-	
+
 	@RequestMapping(value = "/vivek", produces = "application/json")
 	@ResponseBody
 	public ResponseEntity<String> create() {
-
-	//	TdlogResult result = sim.create(td, tdc);
-		return  new ResponseEntity<String>("Hi Vivek", HttpStatus.OK);
+		return new ResponseEntity<String>("Hi Vivek", HttpStatus.OK);
 
 	}
-	
 
 	private ResponseEntity<String> getStatus(TdlogResult result) {
 
